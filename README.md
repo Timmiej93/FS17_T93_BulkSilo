@@ -30,6 +30,8 @@ Drive or walk up to the silo to view how much seed/fertilizer is left in the sil
 
 ### Roadmap
 **Features:**
+- **Most important one:** Adding a very sexy looking UI for ordering stuff, setting desired filllevel, etc.. Could use help with this one!
+
 - Configurations when buying the silo. For example: Empty, 25% filled, 50%, 75%, 100%.
 - Buyable capacity upgrades (possibly per filltype)
 - Specify desired filllevel for midnight refill
