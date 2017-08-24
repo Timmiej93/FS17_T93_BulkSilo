@@ -7,11 +7,6 @@ This silo can be placed anywhere on the map. It contains seeds and solid fertili
 
 
 
-## Contents
-
-
-
-
 ## Features
 ### Specifications
 - **Filltypes**: Seeds, Solid Fertilizer
