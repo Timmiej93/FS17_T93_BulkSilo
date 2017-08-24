@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>Bulk Silo</name>
+        <image>store_bulkSilo.dds</image>
+        <price>25000</price>
+        <dailyUpkeep>0</dailyUpkeep>
+
+        <functions>
+            <function>$l10n_function_bulkSilo</function>
+        </functions>
+
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeables</category>
+    </storeData>
+
+    <placeableType>placeableBulkSilo</placeableType>
+    <filename>bulkSilo.i3d</filename>
+    <placement testSizeX="12" testSizeZ="11" sizeX="24" sizeZ="22" useRandomYRotation="false" useManualYRotation="true" />
+
+    <bulkSilo toolTrigger="0>0|2" trailerTrigger="0>0|3" />
+
+    <tipOcclusionUpdateArea sizeX="5" sizeZ="5" />
+
+	<clearAreas>
+        <clearArea startIndex="0>0|4|0" widthIndex="0>0|4|1" heightIndex="0>0|4|2"/>
+    </clearAreas>	
+</placeable>

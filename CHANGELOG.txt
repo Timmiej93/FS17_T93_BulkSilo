@@ -1,0 +1,9 @@
+[Unreleased]
+Fixed
+	- Seed/Fert prices were incorrect (Using economyManager previously, now using manual prices that match the BigBags' price multiplied with the bulk discount)
+	- Filling trailers was free, changed to use the same price as tools
+	- Tools got filled as trailers after patch 1.4, now manually preventing this for constant results
+	  + This also meant that the silo dialog popped up for filling tools, fixed now
+
+[v1.1.0]
+Initial release

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="34">
+    <author>Timmiej93</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>Bulk silo</en>
+    </title>
+
+    <description>
+        <en>
+            <![CDATA[This is a silo where you can buy your seeds and solid fertilizer in bulk. You can either buy the seeds or fertilizer by filling a trailer, or filling the tool directly. When bought in bulk, costs are slightly lower compared to BigBags.]]>
+        </en>
+    </description>
+
+    <iconFilename>store_bulkSilo.png</iconFilename>
+    <multiplayer supported="false"/>
+
+    <storeItems>
+        <storeItem xmlFilename="bulkSilo.xml"/>
+    </storeItems>
+
+    <inputBindings>
+            <input name="editingMode" category="onfoot" key1="KEY_e" />
+            <input name="TEMP_InstantRefill" category="onfoot" key1="KEY_r" />
+    </inputBindings>
+
+    <extraSourceFiles>
+        <!-- <sourceFile filename="PlaceableBulkSilo_Old.lua" /> -->
+        <sourceFile filename="PlaceableBulkSilo.lua" />
+    </extraSourceFiles>
+
+    <l10n>
+        <!-- Function -->
+        <text name="function_bulkSilo">                 <en>This is a silo where you can buy your seeds and solid fertilizer in bulk. You can either buy the seeds or fertilizer by filling a trailer, or filling the tool directly. When bought in bulk, costs are slightly lower compared to BigBags.</en></text>
+
+        <!-- F1 box  -->
+            <!-- Text -->
+            <text name="F1_UI_SeedFillLevel">               <en>Seeds:</en></text>
+            <text name="F1_UI_FertilizerFillLevel">         <en>Fertilizer:</en></text>
+
+            <text name="F1_UI_TEMP_InstantRefill">          <en>Refill silo</en></text>
+
+            <text name="F1_UI_EnableEditing">               <en>Enable silo edit mode</en></text> 
+            <text name="F1_UI_DisableEditing">              <en>Disable silo edit mode</en></text>
+
+            <!-- Buttons -->
+            <text name="input_editingMode">                 <en>Editing mode</en></text>
+            <text name="editingMode">                       <en>Editing mode</en></text>
+
+            <text name="input_TEMP_InstantRefill">          <en>Instant refill</en></text>
+            <text name="TEMP_InstantRefill">                <en>Instant refill</en></text>
+
+        <!-- Dialogs -->
+        <text name="Dialog_emptySiloBought_title">      <en>Empty silo bought</en></text>
+        <text name="Dialog_emptySiloBought_msg">        <en>The silo you bought is empty, you have to buy the seeds and fertilizer separately. Do you want to undo the purchase?</en></text> 
+
+    </l10n>
+</modDesc>

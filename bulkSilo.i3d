@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="shaders/buildingShaderUS.xml" relativePath="true"/>
+    <File fileId="13" filename="textures/goldcrestValley/base_diffuse.dds" relativePath="true"/>
+    <File fileId="14" filename="textures/goldcrestValley/base_normal.dds" relativePath="true"/>
+    <File fileId="15" filename="textures/goldcrestValley/base_specular.dds" relativePath="true"/>
+    <File fileId="6" filename="textures/goldcrestValley/buildingDetails_diffuse.png" relativePath="true"/>
+    <File fileId="7" filename="textures/goldcrestValley/buildingDetails_normal.png" relativePath="true"/>
+    <File fileId="8" filename="textures/goldcrestValley/buildingDetails_specular.png" relativePath="true"/>
+    <File fileId="9" filename="textures/goldcrestValley/farmSiloSystemAlpha_diffuse.png" relativePath="true"/>
+    <File fileId="10" filename="textures/goldcrestValley/farmSiloSystemAlpha_normal.png" relativePath="true"/>
+    <File fileId="11" filename="textures/goldcrestValley/farmSiloSystemAlpha_specular.png" relativePath="true"/>
+    <File fileId="1" filename="textures/goldcrestValley/farmSiloSystem_diffuse.png" relativePath="true"/>
+    <File fileId="2" filename="textures/goldcrestValley/farmSiloSystem_normal.png" relativePath="true"/>
+    <File fileId="3" filename="textures/goldcrestValley/farmSiloSystem_specular.png" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="10" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="01 - Default" materialId="6" ambientColor="0.588235 0.588235 0.588235" cosPower="10" specularColor="1 1 1">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="farmSiloSystem_mat" materialId="8" ambientColor="1 1 1" cosPower="255" specularColor="1 1 1" customShaderId="4" customShaderVariation="FORCE_GLOSS_SECONDUV">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="uvScale" value="30 30 2 2"/>
+      <CustomParameter name="colorScale" value="0.8 0.55 0.055 1"/>
+    </Material>
+    <Material name="buildingDetails_mat" materialId="11" ambientColor="1 1 1" cosPower="50" specularColor="1 1 1">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="farmSiloSystemAlpha_mat" materialId="9" ambientColor="1 1 1" cosPower="100" specularColor="1 1 1">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bulkSilo.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="bulkSilo" nodeId="25">
+      <Shape shapeId="1" name="farmSiloSystem" translation="0 0.25 0" static="true" clipDistance="1000" nodeId="26" materialIds="8" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="2" name="farmSiloSystemAddons" nodeId="27" materialIds="11" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="farmSiloSystemAlpha" nodeId="28" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="fillTriggerTool" translation="0 0 6.096" scale="1 1 0.5" static="true" trigger="true" collisionMask="10485760" nodeId="29" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="triggerStart" translation="-2.31229e-05 -1.21 4.53538" nodeId="30"/>
+          <TransformGroup name="triggerEnd" translation="-2.32135e-05 -1.21009 -4.49516" nodeId="31"/>
+          <Shape shapeId="5" name="precisionTrigger01" translation="0.017 4.862 0.773" scale="1 1 2" static="true" trigger="true" collisionMask="8388608" nodeId="32" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="6" name="precisionTrigger02" translation="0.017 4.862 0.773" scale="1 1 2" static="true" trigger="true" collisionMask="8388608" nodeId="33" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="7" name="precisionTrigger03" translation="0.017 4.862 0.773" scale="1 1 2" static="true" trigger="true" collisionMask="8388608" nodeId="34" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="precisionTrigger04" translation="0.017 4.862 0.773" scale="1 1 2" static="true" trigger="true" collisionMask="8388608" nodeId="35" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="5" name="fillTriggerTrailer" translation="0.017 4.862 6.519" static="true" trigger="true" collisionMask="1073741824" nodeId="36" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="siloTrigger02" static="true" trigger="true" collisionMask="1073741824" nodeId="37" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="7" name="siloTrigger03" static="true" trigger="true" collisionMask="1073741824" nodeId="38" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="siloTrigger04" static="true" trigger="true" collisionMask="1073741824" nodeId="39" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="fillVolumeDischargeNode" nodeId="40"/>
+          <TransformGroup name="effect" nodeId="41">
+            <Shape shapeId="9" name="grain" translation="0 0 -0.016" visibility="false" clipDistance="100" nodeId="42" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="smoke" translation="0 -0.0376328 0" visibility="false" clipDistance="100" nodeId="43" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <TransformGroup name="clearArea" rotation="0 90 0" nodeId="44">
+          <TransformGroup name="start" translation="-8 0 -5.5" nodeId="45"/>
+          <TransformGroup name="width" translation="4 0 -5.5" nodeId="46"/>
+          <TransformGroup name="height" translation="-8 0 5.5" nodeId="47"/>
+        </TransformGroup>
+        <Shape shapeId="11" name="basePlate" translation="0 -5.09 -0.2" rotation="0 90 0" static="true" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="12" name="playerTrigger" translation="0 1 4.696" scale="4 2 2" static="true" trigger="true" collisionMask="1048576" nodeId="49" materialIds="10" nonRenderable="true" distanceBlending="false"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="25">
+      <Attribute name="fillTriggerTool" type="string" value="0|2"/>
+      <Attribute name="fillTriggerTrailer" type="string" value="0|3"/>
+      <Attribute name="playerTriggerIndex" type="string" value="1"/>
+    </UserAttribute>
+    <UserAttribute nodeId="26">
+      <Attribute name="playerTriggerIndex" type="string" value="0>5"/>
+    </UserAttribute>
+    <UserAttribute nodeId="33">
+      <Attribute name="capacityPerType" type="integer" value="100000"/>
+      <Attribute name="costsPerFillLevelAndDay" type="float" value="0"/>
+      <Attribute name="fillTypes" type="string" value="wheat rape barley maize sunflower soybean"/>
+      <Attribute name="onCreate" type="scriptCallback" value="Storage.onCreate"/>
+      <Attribute name="saveId" type="string" value="Storage_storage1"/>
+    </UserAttribute>
+    <UserAttribute nodeId="36">
+      <Attribute name="effectsNode" type="string" value="4"/>
+      <Attribute name="fillVolumeDischargeNode" type="string" value="3"/>
+      <Attribute name="fillVolumeDischargeNodeLength" type="float" value="0.2"/>
+      <Attribute name="fillVolumeDischargeNodeWidth" type="float" value="0.2"/>
+      <Attribute name="isFarmSilo" type="boolean" value="true"/>
+      <Attribute name="node" type="string" value="0|0|0"/>
+      <Attribute name="particlePosition" type="string" value="-0.05 0.15 0.05"/>
+    </UserAttribute>
+    <UserAttribute nodeId="37">
+      <Attribute name="capacityPerType" type="integer" value="100000"/>
+      <Attribute name="costsPerFillLevelAndDay" type="float" value="0"/>
+      <Attribute name="fillTypes" type="string" value="wheat rape barley maize sunflower soybean"/>
+      <Attribute name="onCreate" type="scriptCallback" value="Storage.onCreate"/>
+      <Attribute name="saveId" type="string" value="Storage_storage1"/>
+    </UserAttribute>
+    <UserAttribute nodeId="42">
+      <Attribute name="materialType" type="string" value="UNLOADING"/>
+      <Attribute name="useSelfAsEffectNode" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="43">
+      <Attribute name="materialType" type="string" value="SMOKE"/>
+      <Attribute name="useSelfAsEffectNode" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>
