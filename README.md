@@ -1,4 +1,4 @@
-# FS17_T93_BulkSilo
+# FS17 T93 BulkSilo
 Farming Simulator 17 mod. A silo from which you can buy fertilizer and seeds in bulk.
 
 This silo can be placed anywhere on the map. It contains seeds and solid fertilizer. Both trailers (that can contain seeds or solid fertilizer) and tools (seeders or fertilizer spreaders) can be filled from it. Filling either will deduct the filled amount from the silo. The silo has a limited capacity. It is completely filled upon placement, and will be refilled to full capacity at midnight. Filling from this silo costs 10 percent less than buying bigbags (since you don't have to buy/lease the bigbags). Please check the specifications below to get more detailed information about the silo. This will probably change during the development process.
