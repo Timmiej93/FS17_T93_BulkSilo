@@ -6,6 +6,12 @@ This silo can be placed anywhere on the map. It contains seeds and solid fertili
 ***WARNING***: You're looking at a development version of this mod. If you're not interested in developing, and simply want to play Farming Simulator with this mod, download it from [FS-UK](https://www.fs-uk.com/fs-mods/view/38647/Bulk-Silo-mod-for-fs-17). The code here might break your savegame, your computer, or your mind. 
 
 
+
+## Contents
+
+
+
+
 ## Features
 ### Specifications
 - **Filltypes**: Seeds, Solid Fertilizer
@@ -55,7 +61,7 @@ Feel free! I hope you enjoy the mod (cough, tell your viewers, cough).
 ## Contributing
 You are completely free to contribute to this mod. By doing this, you transfer your copyright to Timmiej93, so I can publish the mod and change the code. As a reminder, only I (Timmiej93) am allowed to publish this mod anywhere.
 
-If you want to contribute or editing something, simply fork the code, and submit a pull request whenever you're finished. Do keep in mind that I retain the right to deny your pull request without any reason (not that I will, but I can). To make it more likely that I accept your pull request, make sure to add plenty of comments in the code, and provide a good description of what your changes do.
+If you want to contribute or editing something, simply fork the code, and submit a pull request whenever you're finished. Please do  create an issue addressing what you want to change before you start work on it, otherwise you might put effort into something that doesn't get accepted. Do keep in mind that I retain the right to deny your pull request without any reason (not that I will, but I can). To make it more likely that I accept your pull request, make sure to add plenty of comments in the code, and provide a good description of what your changes do.
 
 
 
